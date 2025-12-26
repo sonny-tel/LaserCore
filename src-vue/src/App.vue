@@ -92,8 +92,7 @@ export default {
   top: 0;
   width: 100%;
   height: var(--fc-menu_height);
-  /* Colour header bar to keep text readable */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #fc__menu_bar::before {
@@ -163,17 +162,6 @@ export default {
 .app-inner > .fc__mods__container {
   overflow-y: auto;
   height: calc(100% - var(--fc-menu_height));
-}
-
-/* Header menu */
-.developer_build {
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 20px,
-    rgba(0, 0, 0, 0.3) 20px,
-    rgba(0, 0, 0, 0.3) 40px
-  );
 }
 
 /* Window controls */

@@ -79,4 +79,11 @@ export default defineComponent({
 .el-card__body * {
     max-width: 100%;
 }
+
+/* make all changelog text white */
+.el-card__body,
+.el-card__body * {
+    color: #ffffff;
+    max-width: 100%;
+}
 </style>

@@ -6,13 +6,13 @@
     "devUrl": "http://localhost:1420/",
     "frontendDist": "../src-vue/dist"
   },
-  "productName": "FlightCore",
+  "productName": "LaserCore",
   "version": "3.2.0",
-  "identifier": "com.github.r2northstartools.flightcore",
+  "identifier": "com.github.sonny-tel.lasercore",
   "app": {
     "windows": [
       {
-        "title": "FlightCore",
+        "title": "LaserCore",
         "decorations": false,
         "width": 1010,
         "height": 600

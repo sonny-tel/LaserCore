@@ -29,6 +29,7 @@
                 v-if="!showingLocalMods"
                 v-model="$store.state.search.sortValue"
                 :placeholder="$t('mods.menu.sort_mods')"
+                popper-class="fc_mods__select-dropdown"
             >
                 <el-option
                     v-for="item of sortValues"
@@ -40,8 +41,8 @@
             <el-select
                 v-if="!showingLocalMods"
                 v-model="$store.state.search.selectedCategories"
-                multiple
                 :placeholder="$t('mods.menu.select_categories')"
+                popper-class="fc_mods__select-dropdown"
             >
                 <el-option
                     v-for="item in $store.state.thunderstoreModsCategories"
@@ -137,5 +138,51 @@ export default defineComponent({
 }
 .el-badge:deep(.el-badge__content) {
     top: 28px !important;
+}
+
+.fc_mods__menu :deep(.el-input__wrapper),
+.fc_mods__menu :deep(.el-select__wrapper) {
+    background-color: var(--fc-panel-bg-dark);
+    box-shadow: none;
+    border: none !important;          /* remove border */
+}
+
+/* text color in the control (not the dropdown list) */
+.fc_mods__menu :deep(.el-input__inner),
+.fc_mods__menu :deep(.el-select__selected-item) {
+    color: #fff;
+}
+
+</style>
+
+<style>
+/* dropdown popper (teleported into body) */
+.el-popper.fc_mods__select-dropdown {
+    background-color: var(--fc-panel-bg-dark) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* HIDE the little diamond arrow on top of the dropdown */
+.el-popper.fc_mods__select-dropdown .el-popper__arrow {
+    display: none !important;
+}
+
+/* inner scroll area */
+.fc_mods__select-dropdown .el-scrollbar,
+.fc_mods__select-dropdown .el-select-dropdown__wrap,
+.fc_mods__select-dropdown .el-scrollbar__view {
+    background-color: transparent !important;
+}
+
+/* dropdown items text */
+.fc_mods__select-dropdown .el-select-dropdown__item,
+.fc_mods__select-dropdown .el-select-dropdown__item span {
+    color: #fff !important;
+}
+
+/* selected item background */
+.fc_mods__select-dropdown .el-select-dropdown__item.is-selected {
+    background-color: #4e4e4e7a !important;
 }
 </style>

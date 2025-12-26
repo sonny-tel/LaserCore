@@ -96,7 +96,7 @@ pub async fn check_is_flightcore_outdated() -> Result<bool, String> {
 pub async fn get_northstar_release_notes() -> Result<Vec<ReleaseInfo>, String> {
     let octocrab = octocrab::instance();
     let page = octocrab
-        .repos("R2Northstar", "Northstar")
+        .repos("sonny-tel", "Ion")
         .releases()
         .list()
         // Optional Parameters
@@ -131,7 +131,7 @@ pub async fn get_northstar_release_notes() -> Result<Vec<ReleaseInfo>, String> {
 pub async fn generate_release_note_announcement() -> Result<String, String> {
     let octocrab = octocrab::instance();
     let page = octocrab
-        .repos("R2Northstar", "Northstar")
+        .repos("sonny-tel", "Ion")
         .releases()
         .list()
         // Optional Parameters

@@ -33,7 +33,7 @@ export default defineComponent({
 
 <template>
     <div class="fc_launch__container">
-        <div class="fc_title">Northstar</div>
+        <div class="fc_title">Ion</div>
         <div class="fc_northstar__version__container">
             {{ northstarVersion === '' ? $t('play.unknown_version') : `v${northstarVersion}` }}
             <div v-if="northstarVersion !== ''" class="fc_changelog__link" @click="showChangelogPage">

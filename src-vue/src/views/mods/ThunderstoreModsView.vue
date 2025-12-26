@@ -23,7 +23,7 @@
                 </div>
 
                 <!-- Mod cards -->
-                <thunderstore-mod-card v-for="mod of currentPageMods" v-bind:key="mod.name" :mod="mod" />
+                <thunderstore-mod-card v-for="mod of currentPageMods" v-bind:key="mod.name" :mod="mod" class="thunderstore-mod-card"/>
             </div>
 
             <!-- Bottom pagination -->
@@ -253,6 +253,25 @@ export default defineComponent({
 .fc_bottom__pagination {
     padding-bottom: 20px !important;
     padding-right: 10px;
+}
+
+.fc-container:deep(.el-pagination button),
+.fc-container:deep(.el-pagination .el-pager li) {
+    background-color: transparent !important;
+    border: none !important;
+    color: #e2e6e7 !important;
+    box-shadow: none !important;
+}
+
+.fc-container:deep(.el-pagination button:hover),
+.fc-container:deep(.el-pagination .el-pager li:hover) {
+    background-color: #4e4e4e3b !important;
+    color: #ffffff !important;
+}
+
+.fc-container:deep(.el-pagination .el-pager li.is-active) {
+    background-color: #3f3f3f7a !important;
+    color: #ffffff !important;
 }
 
 /* Card container dynamic size */

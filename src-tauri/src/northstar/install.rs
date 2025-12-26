@@ -205,7 +205,7 @@ async fn do_install(
 
     // Delete old copy
     log::info!("Delete temporary directory");
-    // std::fs::remove_dir_all(temp_dir).unwrap();
+    std::fs::remove_dir_all(temp_dir).unwrap();
 
     log::info!("Done installing Northstar!");
     app.emit("northstar-install-download-progress", InstallProgress {

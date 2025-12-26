@@ -1,3 +1,8 @@
+:root {
+    --fc-panel-bg-dark: rgba(10, 10, 10, 0.4);
+    --fc-border-color-dark: rgba(200, 200, 200, 0.1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,13 +26,38 @@ body {
 }
 
 #fc_bg__container {
-  background: url(/src/assets/1009235.jpg) center no-repeat;
+  background: url(/src/assets/titanfall2-ION-3840p.png) center no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
   position: fixed;
   filter: brightness(0.8);
   scale: 1.03;
+}
+
+.el-card {
+    background-color: var(--fc-panel-bg-dark);
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--fc-border-color-dark);
+}
+
+.name {
+    display: flex;
+    color: white;
+}
+
+.author {
+    color: white;
+}
+
+.desc {
+    color: white;
+}
+
+.statContainer {
+    color: white;
 }
 
 .el-scrollbar {
@@ -54,3 +84,28 @@ body {
 .el-popconfirm {
     word-break: break-word;
 }
+
+.fc_popper {
+    background-color: var(--fc-panel-bg-dark) !important;
+    border-color: var(--fc-border-color-dark) !important;
+}
+
+.fc_popper .el-popper__arrow::before {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.fc_popper .el-result__title,
+.fc_popper .el-result__subtitle,
+.fc_popper .el-result__title *,
+.fc_popper .el-result__subtitle * {
+    color: #fff !important;
+}
+
+.fc_popper .el-dropdown-menu,
+.fc_popper .el-scrollbar__wrap,
+.fc_popper .el-scrollbar__view {
+    background-color: rgba(20, 20, 20, 0.1) !important;
+    color: #fff !important;
+}
+

@@ -11,7 +11,7 @@
             />
         </div>
         <div>
-            <el-switch 
+            <el-switch
                 style="--el-switch-on-color: #13ce66; --el-switch-off-color: #8957e5"
                 v-model="mod.enabled"
                 :before-change="() => updateWhichModsEnabled(mod)"
@@ -96,7 +96,7 @@ export default defineComponent({
 
 <style scoped>
     /*
-        This is a hack to style the card body 
+        This is a hack to style the card body
         since it doesn't work with scoped styles
     */
     :deep(.el-card__body) {
@@ -104,10 +104,6 @@ export default defineComponent({
         align-items: center;
         width: 100%;
         justify-content: space-between;
-    }
-
-    .name {
-        display: flex;
     }
 
     .image {
