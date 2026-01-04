@@ -65,7 +65,7 @@ jobs:
           name: windows-artifacts
           path: |
             src-tauri/target/release/bundle/msi/*msi*
-            src-tauri/target/release/flightcore.pdb
+            src-tauri/target/release/lasercore.pdb
       - name: upload build artifact (linux)
         if: matrix.platform == 'ubuntu-22.04'
         uses: actions/upload-artifact@v4

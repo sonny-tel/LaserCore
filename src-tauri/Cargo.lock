@@ -1273,48 +1273,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "flightcore"
-version = "0.0.6"
-dependencies = [
- "anyhow",
- "async-recursion",
- "chrono",
- "const_format",
- "dirs 5.0.1",
- "glob",
- "json5",
- "libthermite",
- "log",
- "octocrab",
- "open",
- "pretty_env_logger",
- "rand 0.8.5",
- "regex",
- "remove-markdown-links",
- "reqwest",
- "semver",
- "sentry",
- "sentry-log",
- "serde",
- "serde_json",
- "steamlocate",
- "sysinfo",
- "tauri",
- "tauri-build",
- "tauri-plugin-dialog",
- "tauri-plugin-opener",
- "tauri-plugin-process",
- "tauri-plugin-store",
- "tauri-plugin-updater",
- "tokio",
- "ts-rs",
- "winapi",
- "winreg",
- "zip 0.6.6",
- "zip-extract",
-]
-
-[[package]]
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2505,6 +2463,48 @@ dependencies = [
  "indexmap 1.9.3",
  "matches",
  "selectors",
+]
+
+[[package]]
+name = "lasercore"
+version = "0.0.7"
+dependencies = [
+ "anyhow",
+ "async-recursion",
+ "chrono",
+ "const_format",
+ "dirs 5.0.1",
+ "glob",
+ "json5",
+ "libthermite",
+ "log",
+ "octocrab",
+ "open",
+ "pretty_env_logger",
+ "rand 0.8.5",
+ "regex",
+ "remove-markdown-links",
+ "reqwest",
+ "semver",
+ "sentry",
+ "sentry-log",
+ "serde",
+ "serde_json",
+ "steamlocate",
+ "sysinfo",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-dialog",
+ "tauri-plugin-opener",
+ "tauri-plugin-process",
+ "tauri-plugin-store",
+ "tauri-plugin-updater",
+ "tokio",
+ "ts-rs",
+ "winapi",
+ "winreg",
+ "zip 0.6.6",
+ "zip-extract",
 ]
 
 [[package]]

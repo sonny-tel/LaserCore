@@ -1,10 +1,10 @@
 [package]
-name = "flightcore"
-version = "0.0.6"
+name = "lasercore"
+version = "0.0.7"
 description = "Mod-manager for Northstar"
-authors = ["https://github.com/R2NorthstarTools/FlightCore/graphs/contributors"]
+authors = ["https://github.com/R2Ion/LaserCore/graphs/contributors"]
 license = "MIT"
-repository = "https://github.com/R2NorthstarTools/FlightCore"
+repository = "https://github.com/R2Ion/LaserCore"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
